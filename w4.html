@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Page</title>  
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* Topbar Styles */
+        .topbar {
+            background-color: #d90793;
+            color: #fff;
+            padding: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Search Form Styles */
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-form input[type="text"] {
+            padding: 8px;
+            margin-right: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-form button {
+            padding: 8px 15px;
+            background-color: #d90793;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+        width: 250px;
+        background-color: #fff;
+        color: #333;
+        padding: 20px;
+        position: sticky;
+        top: 120px;
+        left: 0;
+        transition: width 0.5s;
+        overflow: hidden;
+        z-index: 900;
+        max-height: calc(100vh - 200px); /* Adjust the value based on your footer height and spacing */
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Content Styles */
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: #3;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+            .underline:hover {
+        text-decoration: underline;
+        }
+        /* Feedback Form Styles */
+        .feedback-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+
+        .feedback-form button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		/* Author Description Styles */
+		.author-info {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+		}
+
+		.author-image {
+			width: 150px;
+			border-radius: 5%;
+			margin-right: 20px;
+		}
+
+		.author-info h3 {
+			margin-bottom: 10px;
+		}
+
+		.author-info p {
+			margin-bottom: 0;
+			text-align: justify
+		}
+
+		/* Feedback Form Styles */
+		.feedback-form {
+			max-width: 400px;
+			margin: 20px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #f9f9f9;
+		}
+
+		.feedback-form h2 {
+			margin-bottom: 10px;
+		}
+
+		.feedback-form p {
+			margin-bottom: 20px;
+		}
+
+		.feedback-link {
+			text-decoration: none;
+			color: #007bff;
+		}
+
+		.feedback-link:hover {
+			text-decoration: underline;
+		}
+
+    </style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <h1 style="margin: 0;">THE WELL WOMAN GUIDE	</h1>
+            <form class="search-form">
+                
+                
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Table of Contents</h2>
+            <ul>
+                
+                <li><a href="#section11" class="underline">Why is it important to talk about PCOD in worklife</a></li>
+              
+               <li><a href="#section22" class="underline">How it affects housewives life</a></li>
+                <li><a href="#section3" class="underline">Diet Plan for housewives</a></li> 
+                <li><a href="#section4" class="underline">Leadership and counseling</a></li>  
+                 <li><a href="#section5" class="underline">Medicines</a></li>
+              <li><a href="#section6" class="underline">Exercises</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            
+           
+            <div>
+               
+
+                <h2 id="section11">Why is it important to talk about PCOD in housewives life</h2>
+<img src="p5.jpg" alternate="image loaded">
+                <p>Talking about Polycystic Ovary Syndrome (PCOS) in women is important for several reasons:</p>
+                <ul>
+                    <li>Health Awareness: Many women may not be aware that they have PCOS, or they may not understand its implications on their health. Talking about PCOS in the workplace can raise awareness and encourage women to seek medical advice if they experience symptoms like irregular periods, weight gain, or excessive hair growth.</li>
+                    <li>Workplace Support: PCOS can affect various aspects of a woman's life, including her work performance and productivity. By discussing PCOS openly, workplaces can create a supportive environment where affected women feel comfortable seeking accommodations or support if needed.</li>
+                    <li>Impact on Health and Well-being: PCOS can have significant effects on physical health, mental health, and overall well-being.</li>
+                    <li>Mental Health: PCOS is often associated with mental health issues such as depression, anxiety, and poor self-esteem due to its effects on appearance and fertility. Discussing PCOS in the workplace can help reduce stigma and provide opportunities for women to access mental health support if necessary.</li>
+                    <li>Work-Life Balance: Managing PCOS symptoms such as fatigue, mood swings, and chronic pain can be challenging, especially for working women juggling multiple responsibilities. By discussing PCOS openly, workplaces can promote understanding and flexibility, allowing affected women to better manage their work-life balance.</li>
+                    <li>Advocacy and Policy Change: Open discussions about PCOS in the workplace can contribute to advocacy efforts and policy changes aimed at improving healthcare access, insurance coverage, and workplace accommodations for women with PCOS.</li>
+                </ul>
+
+                     <style>
+			
+			#container{
+			
+				background-color:#ff0066;
+				color:#ffffff;
+				padding:20px;
+				
+				font-family:"times new roman";
+				font-size:20px;
+				
+				width:225px;
+				
+				border-radius:25px;
+				
+				position:relative;
+			}
+			
+			#dropdown_menu{
+			
+				background-color:#ff6699;
+				color:#000000;
+				padding:20px;
+				
+				font-family:"times new roman";
+				font-size:10px;
+				text-align:center;
+				width:120px;
+				
+				border-radius:25px;
+				
+				position:absolute;
+				top:90%;
+				left:80%;
+				
+				display:none;
+			}
+			
+			#container:hover #dropdown_menu{
+			
+				display:block;
+			}
+			
+		</style>
+	
+	
+	
+	
+		<h1 style="font-family:'times new roman';
+				   color:#ff0066;
+				   text-align:center;">At a Glance</h1>
+		
+			<center><div id="container">
+				Here is the fact!
+				<div id="dropdown_menu">Like endometriosis, PCOS can cause fertility challenges, but neither prevent you from becoming pregnant completely. 
+
+ </div>
+				
+			</div></center>
+
+
+<br>
+<br>
+<br>
+               
+
+                 <h2 id="section22">How PCOD affects housewives life?</h2>
+                <p>PCOD can affect women in various ways, potentially impacting their academic performance, physical health, and emotional well-being. Here are some common ways PCOD can affect students:
+1.	Menstrual Irregularities: PCOD often causes irregular menstrual cycles, which can be disruptive for housewives who need to manage household responsibilities around their menstrual cycles.
+2.	Symptoms Impacting Daily Life: Symptoms such as fatigue, mood swings, and hormonal imbalances can make it challenging for housewives to manage household chores and take care of their families effectively.
+3.	Emotional Impact: Dealing with the physical symptoms of PCOD, such as weight gain, acne, and excess hair growth, can affect a housewife's self-esteem and confidence, potentially leading to emotional distress.
+4.	Managing Symptoms: Managing PCOD often requires lifestyle changes, such as following a healthy diet, exercising regularly, and taking medications. Balancing these changes with household responsibilities can be challenging.
+5.	Impact on Family Life: PCOD symptoms can impact a housewife's ability to participate in family activities or fulfill her role within the family, leading to feelings of guilt or inadequacy.
+6.	Fatigue: PCOD can cause fatigue and low energy levels, making it difficult for housewives to stay motivated and engaged in their daily tasks.
+7.	Impact on Relationships: The emotional and physical toll of PCOD can affect relationships with family members, potentially leading to strain or conflict within the household.
+
+</p>
+                <h2 id="section3">Diet Plan for housewives</h2>
+                <p>For women with PCOD, it's important to focus on a balanced diet that helps manage symptoms and supports overall health. Here's a general diet plan that you can consider:</p>
+                <p>
+                   Breakfast
+•	A bowl of oatmeal topped with berries and a tablespoon of flaxseeds.
+•	Vegetable omelette made with egg whites and loaded with colourful vegetables.
+•	Whole grain toast with almond butter and sliced banana.
+•	Greek yogurt topped with chopped nuts and a drizzle of honey.
+Mid-Morning Snacks:
+•	A handful of almonds or walnuts.
+•	Carrot sticks with hummus.
+•	Greek yogurt with a sprinkle of granola.
+•	A piece of fruit, such as an apple or a pear.
+Lunch:
+•	Grilled chicken breast with a side of steamed vegetables and quinoa.
+•	Mixed greens salad with grilled salmon and a variety of colorful vegetables.
+•	Lentil soup with a side of whole grain bread.
+•	Stir-fried tofu or tempeh with brown rice and stir-fried vegetables.
+Afternoon Snacks:
+•	Celery sticks with peanut butter.
+•	Roasted chickpeas.
+•	Cottage cheese with cherry tomatoes.
+•	A small handful of trail mix (unsalted nuts and dried fruits).
+Dinner Options:
+•	Baked salmon with roasted Brussels sprouts and sweet potatoes.
+•	Quinoa stuffed bell peppers with a side of mixed greens salad.
+•	Grilled shrimp skewers with a quinoa and vegetable medley.
+•	Grilled tofu with steamed broccoli and brown rice.
+Evening Snacks:
+•	Sliced cucumber with a Greek yogurt dip.
+•	Homemade kale chips.
+•	Cherry tomatoes with mozzarella cheese.
+•	A small bowl of mixed fruits.
+Before Bed Snacks:
+•	A small glass of warm turmeric milk.
+•	Herbal tea, such as chamomile or peppermint.
+•	A few almonds or walnuts.
+
+                </p><br>
+<img src="6.jpg"><br><br><br>
+<img src="12.png" alt="Image Description">
+
+                <h2 id="section4">Leadership and Counseling for PCOD</h2>
+                <p>Leadership and counseling for women with PCOD can make a significant difference in how they manage their condition and overall well-being. Here are some key points related to the best leadership and counseling approaches for students with PCOD:</p>
+                <ul>
+                    <li>Empowerment: Empower women with PCOD by providing them with information about their condition.</li>
+                   
+                    <li>Lifestyle Modification: Encourage women with PCOD to make healthy lifestyle choices.</li>
+                    <li>Counseling and Mental Health Support: PCOD can have a significant impact on mental health, leading to stress, anxiety, and depression.</li>
+                    <li>Education and Awareness: Raise awareness about PCOD among women, educators, and the broader community.</li>
+                    <li>Collaboration with Healthcare Providers: Work closely with healthcare providers to ensure that students with PCOD receive the appropriate medical care and support.</li>
+                    <li>Promote Self-care: Encourage women with PCOD to prioritize self-care and make time for activities that promote their physical and mental well-being.</li>
+                </ul>
+                  <h2 id="section5">Medicines</h2>
+               <p> Polycystic ovary syndrome (PCOS) is a hormonal disorder common among women of reproductive age. While there isn't a cure, medications can help manage symptoms. Here are some commonly prescribed medications:</p>
+                <ul>
+                   <li>Birth Control Pills: Oral contraceptives can regulate menstrual cycles and lower levels of male hormones, reducing symptoms like excess hair growth and acne.</li>
+                   
+                    <li>Anti-androgen Medications: Spironolactone is commonly used to block the effects of androgens (male hormones) and can help reduce acne and excess hair growth.</li>
+                    <li>Metformin: This medication is typically used to treat type 2 diabetes, but it can also help regulate menstrual cycles and improve insulin resistance in women with PCOS.</li>
+                    <li>Clomiphene: This fertility medication can help induce ovulation in women who are trying to conceive.</li>
+                    <li>Letrozole: Similar to Clomiphene, Letrozole is another medication used to induce ovulation in women with PCOS who are trying to get pregnant.</li>
+                    <li>Gonadotropins: In some cases, injectable medications called gonadotropins may be used to stimulate ovulation.</li>
+<p> It's essential to consult with a healthcare provider who can tailor a treatment plan to your specific needs and monitor your progress.</p>
+                </ul>
+            <h2 id="section6">Exercises</h2>
+              <p> Exercise is an important component of managing PCOS as it can help improve insulin sensitivity, regulate menstrual cycles, manage weight, and reduce symptoms such as excess hair growth and acne. Here are some exercises that can be beneficial for women with PCOS: </p>
+              <ul>
+               <li>Birth Control Pills: Oral contraceptives can regulate menstrual cycles and lower levels of male hormones, reducing symptoms like excess hair growth and acne.</li>
+                   
+                    <li>Cardiovascular Exercises: Activities that get your heart rate up, such as brisk walking, jogging, cycling, swimming, dancing, or aerobics, can help burn calories and improve cardiovascular health. Aim for at least 150 minutes of moderate-intensity aerobic exercise per week, or 75 minutes of vigorous-intensity exercise.</li>
+                    <li>Strength Training: Incorporating resistance exercises, such as weightlifting or bodyweight exercises like squats, lunges, push-ups, and planks, can help build muscle mass and boost metabolism. Aim to include strength training exercises at least two days a week.</li>
+                    <li>Interval Training: High-intensity interval training (HIIT) involves alternating between short bursts of intense activity and brief periods of rest or lower-intensity exercise. HIIT can be an efficient way to burn calories and improve fitness levels in a shorter amount of time.</li>
+                    <li>Yoga: Yoga can help reduce stress levels, improve flexibility, and promote relaxation. Certain yoga poses may also help regulate hormone levels and improve ovarian function. Poses like child's pose, cobra pose, cat-cow pose, and seated forward bend can be particularly beneficial.</li>
+                    <li>Pilates: Pilates focuses on strengthening the core muscles, improving posture, and enhancing overall body awareness. It can be a low-impact exercise option that helps build strength without putting excessive stress on the joints.</li> 
+<li>Circuit Training: Circuit training involves moving through a series of different exercises targeting different muscle groups with minimal rest in between. It can help improve cardiovascular fitness, build strength, and burn calories.</li> 
+        </ul> <br><br>
+<p> Remember to start slowly and gradually increase the intensity and duration of your workouts. It's also important to listen to your body and modify exercises as needed to avoid injury. Consulting with a healthcare provider or a fitness professional before starting a new exercise program is advisable, especially if you have any underlying health conditions or concerns.  </p>
+            </div>
+            <!-- Author Information -->
+            <div class="container">
+				<div class="content">
+				<h2>About Author</h2>
+					<div class="author-info">
+						<img src="10.jpg">
+						<p>Dr. Vijaya Manohar is a highly esteemed Obstetrician and Gynaecologist with over 37 years of experience, practicing at Apollo Cradle in Koramangala, Bengaluru. Dr. Manohar, holding degrees in MBBS and MD (Obs & Gyn), offers a comprehensive range of services to address various Obstetrics & Gynaecology conditions.</p>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div id="feedback-container" class="feedback-form">
+                <h2>Feedback</h2>
+                <p>To submit your feedback, <a href="C:\Users\ALAN JO KOCHUMON\OneDrive\Desktop\feedback form.html">click here</a>.</p>
+            </div>
+        </div>
+    </div>
+<footer style="background-color: #d90793; color: #fff; padding: 20px;">
+    <div class="container">
+        <h1 style="margin: 0;">Healthy Living</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="display: inline-block; margin-right: 20px;"><a href="#about" style="color: #fff; text-decoration: none;">About us</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="#services" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="#contact" style="color: #fff; text-decoration: none;">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="dita" style="margin-top: 20px;">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to The Well Woman Guide, your trusted source for information on women's health issues such as PCOD and PCOS. Our team of dedicated professionals is committed to providing accurate and up-to-date resources to help women lead healthier lives.</p>
+            </section>
+            <section id="services" style="margin-top: 20px;">
+                <h2>Our Services</h2>
+                <ul style="padding-left: 20px;">
+                    <li>Personalized PCOD and PCOS management plans</li>
+                    <li>Expert consultations with gynecologists specializing in reproductive health</li>
+                    <li>Online support groups for women with PCOD and PCOS</li>
+                </ul>
+            </section>
+            <section id="contact" style="margin-top: 20px;">
+                <h2>Contact Us</h2>          
+                <p>Email: contact@healthyliving.com</p>
+                <p>Phone: 1-800-324564</p>
+            </section>
+        </div>
+    </div>
+    <p style="text-align: center; margin-top: 20px;">&copy; 2024 Healthy Living. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

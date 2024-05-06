@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Well Woman Guide</title>
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+	  background-color:rgba(253, 147, 174, 0.3);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    /* Header Styles */
+	#header {
+	  background-color: rgba(253, 147, 174, 0);
+	  color: #fff;
+	  padding: 10px 0;
+	  text-align: center;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  z-index: 1001; /* Ensure the header floats above other content */
+	  transition: background-color 2.0s ease;
+	z-index: 1004;
+	}
+
+	#header.visible {
+	  background-color: rgba(253, 147, 174, 1); /* Change background color when visible */
+	}
+	
+	#profile-image {
+	  position: absolute;
+	  top: 5px; /* Adjust top position as needed */
+	  right: 30px; /* Adjust right position as needed */
+	  width: 100px; /* Adjust width as needed */
+	  height: 100px; /* Adjust height as needed */
+	  border-radius: 50%; /* Make it circular */
+	  border: 2px solid #fff; /* Add border */
+	}
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    /* Hero Section Styles */
+    .hero {
+      position: relative; /* Relative position */
+    }
+    .slideshow-container {
+      max-width: 100%;
+      margin: auto;
+    }
+    #myVideo {
+      width: 100%;
+      height: auto;
+    }
+ .buttons-container {
+      position: absolute;
+      top: 50%;
+      left: 50px; /* Adjust the left position as needed */
+      transform: translateY(-50%);
+	  text-align: center;
+	 z-index: 1002;
+    }
+    #button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-color: #E12366; /* Button color */
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+	  font-size:2em; 
+	margin-bottom: 5em;
+    }
+	
+	#applet{
+	  display: inline-block;
+      padding: 10px 74px;
+      margin-right: 10px;
+      background-color: #E12366; /* Button color */
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+	  font-size:2em; 
+	}
+	
+    #button:hover,#applet:hover {
+      background-color: #C01752; /* Button color on hover */
+    }
+	
+	.quote {
+	  position: absolute;
+	  top: 181.5%; /* Position it vertically at 50% */
+	  left: 28%; /* Position it horizontally at 50% */
+	  transform: translate(-50%, -50%); /* Center the element */
+	  text-align: left;
+	  padding: 20px; /* Add padding for space around the quote */
+	  border-radius: 10px; /* Add rounded corners for a box-like appearance */
+	  width: 48%; /* Set the desired width */
+	z-index: 1002;
+	}
+
+	.quote-text {
+	  font-size: 24px; /* Adjust the font size as needed */
+	  color: #333; /* Choose an appropriate color */
+	  font-style: italic; /* Optionally make it italic */
+	  margin-bottom: 20px; /* Add some space below the quote */
+	}
+
+    /* Footer Styles */
+    footer {
+      background-color: #FD93AE;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      bottom: 0;
+      position: relative;
+    }
+	
+	    #myMedia {
+      width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      color: #E12366;
+    }
+    dt {
+      font-weight: bold;
+    }
+
+    /* Fade in header on scroll */
+    .show-header {
+      opacity: 1;
+    }
+
+    @media only screen and (max-width: 600px) {
+  #profile-image {
+    width: 50px; /* Adjust width for smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+    top: 2px; /* Adjust top position for smaller screens */
+    right: 15px; /* Adjust right position for smaller screens */
+  }
+
+  .quote {
+    top: 62.6%; /* Adjust top position for smaller screens */
+    left: 50%; /* Adjust left position for smaller screens */
+    transform: translate(-50%, -100%); /* Center horizontally and position above */
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .quote-text {
+    font-size: 12px;
+	font-weight: bold;
+  }
+	    
+ .buttons-container {
+      position: absolute;
+      top: 60%;
+      left: 30px; /* Adjust the left position as needed */
+      transform: translateY(-50%);
+	  text-align: center;
+    }
+	    
+  #button{
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    margin-bottom: 3em;
+  }
+  #applet{
+    padding: 8px 38px; /* Adjust padding for smaller screens */
+    font-size: 0.8em;
+  }
+}
+  </style>
+</head>
+<body>
+<div id="header" class="hidden">
+    <h1>The Well Woman Guide</h1>
+    <nav>
+      <ul>
+        <li><a href="about us.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="contact inf.html">Contact</a></li>
+      </ul>
+    </nav>
+	<img src="images0.png" alt="Profile Image" id="profile-image">
+</div>
+  <div class="hero">
+    <div class="slideshow-container">
+      <video autoplay muted loop id="myVideo">
+        <source src="Project.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="slideshow-container">
+      <img src="bkimg.jpeg" id="myMedia" alt="Your Image Description">
+    </div>
+    <div class="buttons-container">
+      <button id="button"><a href="about us.html" style="text-decoration:none; color:#fff">About this website</a></button><br><br>
+      <button id="applet"><a href="1qz.html" style="text-decoration:none; color:#fff">Take a Quiz</a></button>
+    </div>
+  </div>
+  <div class="quote">
+  <p class="quote-text">"PCOD is a challenging condition, but it doesn't restrict you. 
+  With proper understanding, management, and support, individuals with PCOD can lead healthy
+  , fulfilling lives"</p>
+  </div>
+  <footer>
+    <p>&copy; 2024 The Well Woman Guide. All Rights Reserved.</p>
+  </footer>
+  
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("header").classList.add("visible");
+      } else {
+        document.getElementById("header").classList.remove("visible");
+      }
+    }
+  </script>
+</body>
+</html>

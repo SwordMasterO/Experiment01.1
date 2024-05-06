@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form</title>
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+			background-color:rgba(253, 147, 174, 0.3);
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Feedback Form Styles */
+        .feedback-form {
+            margin-bottom: 20px;
+        }
+
+        .feedback-form h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .feedback-form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .feedback-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .feedback-form button:hover {
+            background-color: #0056b3;
+        }
+		.navigation {
+            position: fixed;
+            top: 0px;
+            right: -280px;
+            width: 280px;
+            height: 100%;
+            background-color: #f0f0f0;
+            padding: 0px;
+            transition: right 0.5s ease;
+            overflow-y: auto;
+        }
+		
+		.Anchor {
+			text-decoration: none;
+			color: black;
+			font-family:century;
+			font-size:24px
+        }
+
+        .Anchor:visited {
+            color: black;
+        }
+
+        .Anchor:hover {
+            color: white;
+        }
+
+        .Anchor:active {
+            color: violet;
+        }
+		
+		.content {
+            flex: 4;
+            padding: 0px;
+			padding-right:20px;
+			margin-right: 280px;
+			margin-left: 20px;
+			background-color: #ffffff;
+        }
+
+        .toggle-button {
+			position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+			transition: right 0.5s ease;
+            top: 59px;
+            right: 10px;
+            cursor: pointer;
+            z-index: 999;
+        }
+		
+		.toggle-image {
+            width: 30px;
+            height: 30px;
+			right:10px;
+        }
+		
+		.submit-button {
+			background-color: #1affc6; 
+			border: none;
+			color: white;
+			padding: 10px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 10px;
+			transition: background-color 0.5s ease;
+		}
+
+		.submit-button:hover {
+			background-color: #00ff00;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation" id="navigation" style="right: -280px;  padding-left:0px; border-left: 2.5px solid #000;">
+            <h2 style="background-color:rgba(253, 147, 174, 0.3); font-family:century; font-size:26px">Navigation Panel</h2>
+			<br>
+			<span style="display: flex; justify-content: center; align-items: center; background-color:#c0c0c0;">
+			<img src="images0.png" height=140px Style="display: block;">
+			</span>
+			<span Style="font-family:century; font-size:25px; background-color:rgba(253, 147, 174, 0.3); display: block;">The Well Woman Guide</Span>
+            <hr style="border: none; border-top: 2.5px solid #000; margin: 5px 0; margin-left:-5px;">			
+			<ul style="background-color:rgba(253, 147, 174, 0.3); list-style-type:none; padding:0px; margin:0px">
+                <li><a href="#" class="Anchor">About Us</a></li>
+				<li><a href="#" class="Anchor">Fundings</a></li>
+                <li><a href="#" class="Anchor">Methodology</a></li>
+                <li><a href="#" class="Anchor">Contact Us</a></li>
+				<li><a href="#" class="Anchor">Qualifications</a></li>
+				<li><a href="#" class="Anchor">Partnerships</a></li>
+            </ul>
+			<hr style="border: none; border-top: 2.5px solid #000; margin: 5px 0; margin-left:-5px;">
+			<a href="#" class="Anchor" Style="background-color:rgba(253, 147, 174, 0.3); display:block; text-align:center; font-size:32px">Download App</a>
+			<a href="#"><img src="insta.webp" height=65px Style="padding-top:5px" ></a>
+			<a href="#"><img src="x.png" height=65px Style="padding-top:5px" ></a>
+			<a href="#"><img src="p.png" height=65px Style="padding-top:5px" ></a>
+			<a href="#"><img src="y.jpeg" height=65px Style="padding-top:5px" ></a>
+		</nav>
+        <form class="feedback-form">
+            <h2>Website Feedback Form</h2>
+            <div>
+                <label>1. How would you rate the overall design of the website?</label>
+                <label><input type="radio" name="design" value="5"> Excellent</label>
+                <label><input type="radio" name="design" value="4"> Very Good</label>
+                <label><input type="radio" name="design" value="3"> Good</label>
+                <label><input type="radio" name="design" value="2"> Fair</label>
+                <label><input type="radio" name="design" value="1"> Poor</label>
+            </div>
+            <div>
+                <label>2. How user-friendly do you find the navigation of the website?</label>
+                <label><input type="radio" name="navigation" value="5"> Extremely User-Friendly</label>
+                <label><input type="radio" name="navigation" value="4"> Very User-Friendly</label>
+                <label><input type="radio" name="navigation" value="3"> User-Friendly</label>
+                <label><input type="radio" name="navigation" value="2"> Somewhat User-Friendly</label>
+                <label><input type="radio" name="navigation" value="1"> Not User-Friendly</label>
+            </div>
+            <div>
+                <label>3. How well does the website perform in terms of speed and responsiveness?</label>
+                <label><input type="radio" name="performance" value="5"> Excellent</label>
+                <label><input type="radio" name="performance" value="4"> Very Good</label>
+                <label><input type="radio" name="performance" value="3"> Good</label>
+                <label><input type="radio" name="performance" value="2"> Fair</label>
+                <label><input type="radio" name="performance" value="1"> Poor</label>
+            </div>
+            <div>
+                <label>4. How informative do you find the content on the website?</label>
+                <label><input type="radio" name="content" value="5"> Extremely Informative</label>
+                <label><input type="radio" name="content" value="4"> Very Informative</label>
+                <label><input type="radio" name="content" value="3"> Informative</label>
+                <label><input type="radio" name="content" value="2"> Somewhat Informative</label>
+                <label><input type="radio" name="content" value="1"> Not Informative</label>
+            </div>
+            <div>
+                <label>5. How visually appealing are the graphics and images on the website?</label>
+                <label><input type="radio" name="graphics" value="5"> Excellent</label>
+                <label><input type="radio" name="graphics" value="4"> Very Good</label>
+                <label><input type="radio" name="graphics" value="3"> Good</label>
+                <label><input type="radio" name="graphics" value="2"> Fair</label>
+                <label><input type="radio" name="graphics" value="1"> Poor</label>
+            </div>
+            <div>
+                <label>6. How likely are you to recommend this website to others?</label>
+                <label><input type="radio" name="recommend" value="5"> Extremely Likely</label>
+                <label><input type="radio" name="recommend" value="4"> Very Likely</label>
+                <label><input type="radio" name="recommend" value="3"> Likely</label>
+                <label><input type="radio" name="recommend" value="2"> Somewhat Likely</label>
+                <label><input type="radio" name="recommend" value="1"> Not Likely</label>
+            </div>
+            <div>
+                <label>7. How satisfied are you with the website's customer support options?</label>
+                <label><input type="radio" name="support" value="5"> Extremely Satisfied</label>
+                <label><input type="radio" name="support" value="4"> Very Satisfied</label>
+                <label><input type="radio" name="support" value="3"> Satisfied</label>
+                <label><input type="radio" name="support" value="2"> Not Very Satisfied</label>
+                <label><input type="radio" name="support" value="1"> Not Satisfied at All</label>
+            </div>
+            <div>
+                <label>8. How well does the website meet your expectations?</label>
+                <label><input type="radio" name="expectations" value="5"> Exceeds Expectations</label>
+                <label><input type="radio" name="expectations" value="4"> Meets Expectations</label>
+                <label><input type="radio" name="expectations" value="3"> Somewhat Meets Expectations</label>
+                <label><input type="radio" name="expectations" value="2"> Below Expectations</label>
+                <label><input type="radio" name="expectations" value="1"> Far Below Expectations</label>
+            </div>
+            <div>
+                <label>9. How likely are you to revisit the website in the future?</label>
+                <label><input type="radio" name="revisit" value="5"> Extremely Likely</label>
+                <label><input type="radio" name="revisit" value="4"> Very Likely</label>
+                <label><input type="radio" name="revisit" value="3"> Likely</label>
+                <label><input type="radio" name="revisit" value="2"> Somewhat Likely</label>
+                <label><input type="radio" name="revisit" value="1"> Not Likely</label>
+            </div>
+            <div>
+                <label>10. How well does the website address your needs and interests?</label>
+                <label><input type="radio" name="address_needs" value="5"> Extremely Well</label>
+                <label><input type="radio" name="address_needs" value="4"> Very Well</label>
+                <label><input type="radio" name="address_needs" value="3"> Well</label>
+                <label><input type="radio" name="address_needs" value="2"> Somewhat Well</label>
+                <label><input type="radio" name="address_needs" value="1"> Not Well at All</label>
+            </div>
+            <div>
+                <label>11. How likely are you to engage with the website's interactive features?</label>
+                <label><input type="radio" name="interactive_features" value="5"> Extremely Likely</label>
+                <label><input type="radio" name="interactive_features" value="4"> Very Likely</label>
+                <label><input type="radio" name="interactive_features" value="3"> Likely</label>
+                <label><input type="radio" name="interactive_features" value="2"> Somewhat Likely</label>
+                <label><input type="radio" name="interactive_features" value="1"> Not Likely</label>
+            </div>
+            <div>
+                <label>12. How well does the website maintain your privacy and security?</label>
+                <label><input type="radio" name="privacy_security" value="5"> Excellent</label>
+                <label><input type="radio" name="privacy_security" value="4"> Very Good</label>
+                <label><input type="radio" name="privacy_security" value="3"> Good</label>
+                <label><input type="radio" name="privacy_security" value="2"> Fair</label>
+                <label><input type="radio" name="privacy_security" value="1"> Poor</label>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+	<div class="toggle-button" id="toggleButton">
+	<img src="toggle image.png" alt="Toggle Navigation" class="toggle-image" />
+    </div>
+
+    <script>
+        const navigation = document.getElementById('navigation');
+        const toggleButton = document.getElementById('toggleButton');
+
+        function toggleNavigation() {
+            if (navigation.style.right === '-280px') {
+                navigation.style.right = '0';
+                toggleButton.style.right = '260px';
+            } else {
+                navigation.style.right = '-280px';
+                toggleButton.style.right = '10px';
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleNavigation);
+    </script>
+</body>
+</html>

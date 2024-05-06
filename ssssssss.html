@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <title>about us</title>
+  <style>
+  /* Basic layout styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: pink;
+  color: pink;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* Hero section styles */
+#hero {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero-content {
+  animation: slide-up 1s ease;
+}
+
+/* Featured products section styles */
+#featured-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  margin: 0 20px;
+  text-align: center;
+  animation: slide-down 1s ease;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000;
+  color: #fD93ae;
+  padding: 20px;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Animations */
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Slide down animation */
+@keyframes slide-down {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.image {
+  width: 250px; /* Adjust the width as needed */
+}
+
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* Topbar Styles */
+        .topbar {
+            background-color: #fD93ae;
+            color: #fff;
+            padding: 0px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Search Form Styles */
+        .search-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-form input[type="text"] {
+            padding: 8px;
+            margin-right: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-form button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+main{
+	padding-top:49px;
+}
+</style>
+</head>
+<body>
+    <div class="topbar">
+        <div class="container">
+            <h1 style="margin: 0;">THE WELL WOMAN GUIDE	</h1>
+            <form class="search-form">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+		<img src="C:\Users\akshay\Desktop\my supremacy\project\profession2.jpg" alt="x" class="image">
+        <h2>x</h2>
+        <a href="#" class="btn">Pratibha(B.sc maths hons.)</a>
+      </div>
+    </section>
+
+    <section id="featured-products">
+      <div class="product">
+        <img src="C:\Users\akshay\Desktop\my supremacy\project\profession.jpg"  alt="a" class="image">
+        <h2>x</h2>
+        <a href="#" class="btn">Pratyush Kumar Dash(B.sc Chemistry hons.)</a>
+      </div>
+      <div class="product">
+        <img src="black.jpg" alt="x" class="image">
+        <h2>x</h2>
+        <a href="#" class="btn">Alan (B.sc maths hons)</a>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="background-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+
+<footer style="background-color:  #fD93ae; color: #fff; padding: 20px;">
+    <div class="container">
+        <h1 style="margin: 0;">Healthy Living</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="display: inline-block; margin-right: 20px;"><a href="#about" style="color: #fff; text-decoration: none;">About us</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="#services" style="color: #fff; text-decoration: none;">Privacy Policy</a></li>
+                <li style="display: inline-block; margin-right: 20px;"><a href="#contact" style="color: #fff; text-decoration: none;">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="dita" style="margin-top: 20px;">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Welcome to The Well Woman Guide, your trusted source for information on women's health issues such as PCOD and PCOS. Our team of dedicated professionals is committed to providing accurate and up-to-date resources to help women lead healthier lives.</p>
+            </section>
+            <section id="services" style="margin-top: 20px;">
+                <h2>Our Services</h2>
+                <ul style="padding-left: 20px;">
+                    <li>Personalized PCOD and PCOS management plans</li>
+                    <li>Expert consultations with gynecologists specializing in reproductive health</li>
+                    <li>Online support groups for women with PCOD and PCOS</li>
+                </ul>
+            </section>
+            <section id="contact" style="margin-top: 20px;">
+                <h2>Contact Us</h2>          
+                <p>Email: contact@healthyliving.com</p>
+                <p>Phone: 1-800-324564</p>
+            </section>
+        </div>
+    </div>
+    <p style="text-align: center; margin-top: 20px;">&copy; 2024 Healthy Living. All rights reserved.</p>
+</footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

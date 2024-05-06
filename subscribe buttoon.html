@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscribe Form </title>
+<style>
+
+     body{
+           background-image:url('thinking.webp');
+           background-repeat:no-repeat;
+           background-position:fixed;
+          
+          }
+   
+    .subscribe-form {
+        display: none; 
+        position: fixed;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%);
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        z-index: 9999;
+    }
+    .subscribe-form label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .subscribe-form input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    .subscribe-form button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<center>
+
+<header>
+    <h1>Take our free 30-day advice bites </h1>
+    <p> Our gyanaelogist team will show you how to create lasting and healthy diet plan and exercises for PCOD. </p>
+
+    <button id="subscribeButton" >Subscribe</button>
+</header>
+
+<div class="subscribe-form" id="subscribeForm">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    <button onclick="closeForm()">Close</button>
+</div>
+<p> Your privacy iis our first priority</P>
+</center>
+
+<script>
+    // Get the subscribe button and form
+    var subscribeButton = document.getElementById("subscribeButton");
+    var subscribeForm = document.getElementById("subscribeForm");
+
+    // Show the form when the subscribe button is clicked
+    subscribeButton.addEventListener("click", function() {
+        subscribeForm.style.display = "block";
+    });
+
+    // Close the form when the close button is clicked
+    function closeForm() {
+        subscribeForm.style.display = "none";
+    }
+</script>
+
+<!-- Your webpage content here -->
+
+</body>
+</html>

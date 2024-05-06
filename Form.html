@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+    <style>
+        body {
+            font-family: georgia;
+            margin: 0;
+            padding: 0;
+			background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .navigation {
+            position: fixed;
+            top: 0px;
+            right: -280px;
+            width: 280px;
+            height: 100%;
+            background-color: #f0f0f0;
+            padding: 0px;
+            transition: right 0.5s ease;
+            overflow-y: auto;
+        }
+		
+		.Anchor {
+			text-decoration: none;
+			color: black;
+			font-family:century;
+			font-size:24px
+        }
+
+        .Anchor:visited {
+            color: black;
+        }
+
+        .Anchor:hover {
+            color: white;
+        }
+
+        .Anchor:active {
+            color: violet;
+        }
+		
+		.content {
+            flex: 4;
+            padding: 0px;
+			padding-right:20px;
+			margin-right: 280px;
+			margin-left: 20px;
+			background-color: #ffffff;
+        }
+
+        .toggle-button {
+			position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: #333;
+			transition: right 0.5s ease;
+            top: 59px;
+            right: 10px;
+            cursor: pointer;
+            z-index: 999;
+        }
+		
+		.toggle-image {
+            width: 30px;
+            height: 30px;
+			right:10px;
+        }
+		
+		.submit-button {
+			background-color: #1affc6; 
+			border: none;
+			color: white;
+			padding: 10px 24px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 10px;
+			transition: background-color 0.5s ease;
+		}
+
+		.submit-button:hover {
+			background-color: #00ff00;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation" id="navigation" style="right: -280px;  padding-left:0px; border-left: 2.5px solid #000;">
+            <h2 style="background-color:#045c5a; font-family:century; font-size:26px">Navigation Panel</h2>
+			<br>
+			<span style="display: flex; justify-content: center; align-items: center; background-color:#c0c0c0;">
+			<img src="images.png" height=200px Style="display: block;">
+			</span>
+			<span Style="font-family:century; font-size:25px; background-color:#045c5a; display: block;">The Well Woman Guide</Span>
+            <hr style="border: none; border-top: 2.5px solid #000; margin: 5px 0; margin-left:-5px;">			
+			<ul style="background-color:#045c5a; list-style-type:none; padding:0px; margin:0px">
+                <li><a href="#" class="Anchor">About Us</a></li>
+				<li><a href="#" class="Anchor">Fundings</a></li>
+                <li><a href="#" class="Anchor">Methodology</a></li>
+                <li><a href="#" class="Anchor">Contact Us</a></li>
+				<li><a href="#" class="Anchor">Qualifications</a></li>
+				<li><a href="#" class="Anchor">Partnerships</a></li>
+            </ul>
+		<hr style="border: none; border-top: 2.5px solid #000; margin: 5px 0; margin-left:-5px;">
+		<a href="#" class="Anchor" Style="background-color:#045c5a; display:block; text-align:center; font-size:32px">Download App</a>
+		<a href="#"><img src="insta.webp" height=65px Style="padding-top:5px" ></a>
+		<a href="#"><img src="x.png" height=65px Style="padding-top:5px" ></a>
+		<a href="#"><img src="p.png" height=65px Style="padding-top:5px" ></a>
+		<a href="#"><img src="y.jpeg" height=65px Style="padding-top:5px" ></a>
+		</nav>
+        <main class="content">
+            <h1 style="background-color:#045c5a; font-family:century">QUIZ TO UNDERSTAND YOU BETTER</h1>
+            <form>
+                <div class="form-group">
+                    <label class="form-label" style="text-align:justify; display: block;">Question 1.<i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i></label>
+                    <div class="form-option">
+                        <input type="radio" name="question1" id="option1">
+                        <label for="option1">Option 1</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" name="question1" id="option2">
+                        <label for="option2">Option 2</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" name="question1" id="option3">
+                        <label for="option3">Option 3</label>
+                    </div>
+                </div>
+				<br><br><br>
+                <div class="form-group">
+                    <label class="form-label" style="text-align:justify; display: block;">Question 2.<i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i></label>
+                    <div class="form-option">
+                        <input type="radio" name="question2" id="option4">
+                        <label for="option4">Option 1</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" name="question2" id="option5">
+                        <label for="option5">Option 2</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" name="question2" id="option6">
+                        <label for="option6">Option 3</label>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="form-group">
+                    <label class="form-label" style="text-align:justify; display: block;">Question 3.<i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</i></label>
+                    <div class="form-option">
+                        <input type="radio" name="question3" id="option7">
+                        <label for="option7">Option 1</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" name="question3" id="option8">
+                        <label for="option8">Option 2</label>
+                    </div>
+                    <div class="form-option">
+                        <input type="radio" name="question3" id="option9">
+                        <label for="option9">Option 3</label>
+                    </div>
+                </div>
+				<br>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </main>
+    </div>
+
+	<div class="toggle-button" id="toggleButton">
+	<img src="toggle image.png" alt="Toggle Navigation" class="toggle-image" />
+    </div>
+
+    <script>
+        const navigation = document.getElementById('navigation');
+        const toggleButton = document.getElementById('toggleButton');
+
+        function toggleNavigation() {
+            if (navigation.style.right === '-280px') {
+                navigation.style.right = '0';
+                toggleButton.style.right = '260px';
+            } else {
+                navigation.style.right = '-280px';
+                toggleButton.style.right = '10px';
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleNavigation);
+    </script>
+</body>
+</html>
+
+<!--padding top
+same line navigation width and height
+float;body<main bgcolor
+-->f
